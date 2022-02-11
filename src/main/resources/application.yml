@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: myapp
+  cloud:
+    consul:
+      enabled: true
+      token: PLACE-APP_TOKEN-HERE
+      config:
+        enabled: true
+        format: YAML
+  config:
+    import: "consul:"
+
+hello: aaa
+hello2: bbb

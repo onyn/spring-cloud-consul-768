@@ -1,0 +1,12 @@
+version: '3.4'
+
+services:
+  consul:
+    image: consul
+    network_mode: host
+    volumes:
+      - ./docker:/consul/config
+
+  consul-no-acl:
+    image: consul
+    network_mode: host
